@@ -22,6 +22,7 @@ RUN make installdeps
 RUN make build-4-docker
 
 # Set default output dir
+WORKDIR /
 VOLUME ["/output"]
 
 ENTRYPOINT ["/bin/radigo"]
